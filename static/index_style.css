@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(229, 229, 78);
+}
+
+body > h1 {
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+body > div > p > a{
+    color: rgb(133, 31, 133);
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+body > div > p > a :hover {    
+}

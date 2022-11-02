@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='order_style.css') }}">
+
+<html>
+    <head>
+        <title>{{title}} - Order View </title>
+    </head>
+    <body>
+        <h1>Order Details</h1>
+        <div>
+            <p>
+                Customer: {{order.customer_name}} <br>
+                Order: {% for key in order.toppings %} 
+                    {{key}}: {{order.toppings[key]}}
+                {% endfor %} <br>
+                Address: {{order.delivery_address}}<br>
+                Time: {{order.order_date}}
+            </p>
+        </div>
+    </body>
+</html>
